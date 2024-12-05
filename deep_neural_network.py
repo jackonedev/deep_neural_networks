@@ -491,3 +491,19 @@ if __name__ == "__main__":
 
 
     print("\nFinalización exitosa del programa\n")
+
+
+
+if __name__ == '__main__':
+    # Example usage:
+    layers_size = [2, 3, 2] # Input layer (2 neurons), hidden layer (3 neurons), output layer (2 neurons)
+    activation_functions = ['relu', 'softmax']  # ReLU for hidden layer, softmax for output layer
+    input_data = np.array([[0.5, 0.2], [0.8, 0.9]])
+
+    # Create and use the neural network
+    nn = NeuralNetwork(layers_size, activation_functions)
+    output = nn.predict(input_data)
+    print("Input data:")
+    print(input_data)
+    print("Predicted output:")
+    print(output)
